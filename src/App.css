@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+/* Configs */
+:root {
+  --color-primary: #30c7df;
+  --color-secondary: #1da3b8;
+  --color-tertiary: #b81d32;
+  --color-quaternary: #911223;
+  --color-white: #fff;
+  --color-gray: #f5f5f5;
+  --color-dark-gray: #333;
+  --color-black: #000;
+  --color-lines:#00000021;
+  --font-family: 'Roboto', sans-serif;
+}
+
+/* Main app container */
+#root {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: var(--font-family);
+}
+
+/* User color mode */
+/* Default */
+body{
+    background: var(--color-white);
+    color:var(--color-black);
+}
+/* Dark */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-lines:#ffffff3b;
+  }  
+  body{
+    background: var(--color-black);
+    color: var(--color-white);
+  }
+}
+html[data-theme='dark'] {
+  --text-color-normal: hsl(210, 10%, 62%);
+  --text-color-light: hsl(210, 15%, 35%);
+  --text-color-richer: hsl(210, 50%, 72%);
+  --text-color-highlight: hsl(25, 70%, 45%);
+}
+
+/* Smooth fonts */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Default configs */
+a, li{
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition:    all .3s ease-in-out;
+  -o-transition:      all .3s ease-in-out;
+  -ms-transition:     all .3s ease-in-out;
+  transition:         all .3s ease-in-out;
+}
+
+/* Buttons */
+body button {
+  box-shadow: 0 0 10px #0000002e;
+  margin: 0em 0.3em;
+  border: 0;
+  transform: scale(1);
+  display: flex;
+  align-items: center;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition:    all .3s ease-in-out;
+  -o-transition:      all .3s ease-in-out;
+  -ms-transition:     all .3s ease-in-out;
+  transition:         all .3s ease-in-out;  
+}
+body button:hover{
+  box-shadow: 0 0 4px #0000002e;
+  border: 0;
+  transform: scale(1.05);
+}
+.primary{
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+.primary:hover{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.secondary{
+  background-color: var(--color-quaternary);
+  color: var(--color-white);
+}
+.secondary:hover{
+  background-color: var(--color-tertiary);
+  color: var(--color-white);
+}
+
+/* App */
+body{
+  padding: 0;
+  margin: 0;
+}
+.app{
+  display: flex;
+  padding:0;
+  margin: 0;
+  width: 100%;
+  height: 100%;  
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* Editor area */
+.app-editor {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.app-editor-treeview {
+  width: 20%;
+  border-right: 1px solid var(--color-lines);
+}
+.app-editor-wrapper {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Mobile */
+@media (max-width: 1000px) {
+  .app-editor {
+    flex-direction: column;
+  }
+  .app-editor-wrapper, 
+  .app-editor-treeview {
+    width: 100%;
+  }
+}

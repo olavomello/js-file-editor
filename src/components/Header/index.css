@@ -1,0 +1,23 @@
+/* Containner */
+.app-header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 1em 3em;
+  border-bottom: 1px solid var(--color-lines);
+}
+/* Title */
+.app-header h1 {
+  font-size: 2em;
+}
+/* Logo */
+.app-header img {
+  width: 130px;
+}
+/* Dark */
+@media (prefers-color-scheme: dark) {
+  .app-header img {
+    filter: invert(1) grayscale(1);
+  }
+}
