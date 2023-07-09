@@ -19,7 +19,7 @@ import iconSave from "../../assets/icons/save.svg";
 import iconClose from "../../assets/icons/close.svg";
 import iconDelete from "../../assets/icons/delete.svg";
 
-function VeezooEditor(props: any) {
+function CodeEditor(props: any) {
   // Loading
   const [loading, setLoading] = useState<boolean>(false);
 
@@ -195,4 +195,4 @@ function VeezooEditor(props: any) {
   );
 }
 
-export default VeezooEditor;
+export default CodeEditor;

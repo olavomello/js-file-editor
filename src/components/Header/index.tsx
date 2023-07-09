@@ -4,7 +4,7 @@
 import './index.css';
 
 /* Images */
-import logo from '../../assets/veezoo_logo.svg';
+import logo from '../../assets/logo.svg';
 
 /* Props */
 interface HeaderProps {
@@ -14,7 +14,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ title }) => (
   <div className="app-header">
     <h1>{title || "Editor"}</h1>
-    <img src={logo} alt="Veezoo logo" />
+    <img src={logo} alt="Company Logo" />
   </div>
 );
 

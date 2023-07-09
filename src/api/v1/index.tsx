@@ -3,22 +3,6 @@
 
 import axios from "axios";
 
-// --------------------------------------------------
-// Instructions
-// --------------------------------------------------
-// API Definition
-// Check https://app.swaggerhub.com/apis/john-veezoo/Online-Editor/1.0.0
-// GET /filetree
-// GET /files/{fileId}
-// PUT /files/{fileId}
-// DELETE /files/{fileId}
-
-// Mock Server
-// Access the API over https://my-json-server.typicode.com/open-veezoo/editor.
-// Example: https://my-json-server.typicode.com/open-veezoo/editor/filetree
-
-// --------------------------------------------------
-
 // CONSTS
 const API_URL = "https://my-json-server.typicode.com/open-veezoo/editor";
 const CONFIGS = {

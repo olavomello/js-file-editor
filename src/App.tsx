@@ -6,7 +6,7 @@ import { Toaster } from "react-hot-toast";
 /* Components */
 import Header from "./components/Header";
 import Treeview from "./components/Treeview";
-import VeezooEditor from "./components/Editor";
+import CodeEditor from "./components/Editor";
 
 /* CSS */
 import "./App.css";
@@ -50,7 +50,7 @@ function App() {
             <Treeview delete={reloadFiletree}/>
           </div>
           <div className="app-editor-wrapper">
-            {(fileId && <VeezooEditor file={fileId} reloadFiletree={_reloadFiletree} />) || (
+            {(fileId && <CodeEditor file={fileId} reloadFiletree={_reloadFiletree} />) || (
               <div className="editor-empty">Select a file to edit</div>
             )}
           </div>
