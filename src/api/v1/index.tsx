@@ -4,7 +4,7 @@
 import axios from "axios";
 
 // CONSTS
-const API_URL = "https://my-json-server.typicode.com/open-veezoo/editor";
+const API_URL = "https://my-json-server.typicode.com/olavomello/js-file-editor";
 const CONFIGS = {
   headers: {
     accept: "application/json",
