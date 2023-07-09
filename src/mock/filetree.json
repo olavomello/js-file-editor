@@ -1,0 +1,72 @@
+[
+  {
+    "id": 0,
+    "name": "editor",
+    "isDirectory": true,
+    "children": [
+      {
+        "id": 1,
+        "name": "src",
+        "isDirectory": true,
+        "children": [
+          {
+            "id": 2,
+            "name": "main",
+            "isDirectory": true,
+            "children": [
+              {
+                "id": 3,
+                "name": "Hello.java",
+                "isDirectory": false
+              },
+              {
+                "id": 4,
+                "name": "Main.java",
+                "isDirectory": false
+              },
+              {
+                "id": 5,
+                "name": "Home.java",
+                "isDirectory": false
+              },
+              {
+                "id": 6,
+                "name": "messages",
+                "isDirectory": true,
+                "children": [
+                  {
+                    "id": 7,
+                    "name": "Message.java",
+                    "isDirectory": false
+                  },
+                  {
+                    "id": 8,
+                    "name": "MessageComposer.java",
+                    "isDirectory": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "name": "test",
+            "isDirectory": true,
+            "children": [
+              {
+                "id": 10,
+                "name": "MessageSpec.java",
+                "isDirectory": false
+              },
+              {
+                "id": 11,
+                "name": "MessageComposerSpec.java",
+                "isDirectory": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
